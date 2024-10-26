@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "jsx": "react",
     "target": "es2016",
     "module": "commonjs",
     "esModuleInterop": true,
@@ -8,5 +9,7 @@
     "skipLibCheck": true,
     "outDir": "./dist",
     "rootDir": "./src",
-  }
+    "types": ["@remix-run/node", "vite/client"],
+  },
+  "include": ["vite.config.mjs", "src"],
 }
