@@ -1,0 +1,23 @@
+{
+  "name": "root",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.12.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lumejs/cms.git"
+  },
+  "scripts": {
+    "release": "pnpm run build && changeset publish",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@changesets/cli": "^2.27.9",
+    "turbo": "^2.2.3",
+    "typescript": "^5.6.3"
+  }
+}
